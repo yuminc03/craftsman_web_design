@@ -1,0 +1,326 @@
+/* CSS Document */
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	font-family: "맑은 고딕";
+	color: #222328;
+}
+body {
+	width: 1000px;
+	font-size: 20px;
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+header {
+	float: left;
+	position: absolute;
+}
+
+.top {
+	width: 200px;
+	height: 650px;
+	float: left;
+	background-color: #eeeeee;
+}
+
+.logo {
+	width: 200px;
+	height: 40px;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.logo img {
+	float: left;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+.menu {
+	width: 180px;
+	top: 100px;
+	left: 10px;
+	position: absolute;
+	text-align: center;
+	z-index: 1;
+}
+
+.navi > li {
+	width: 180px;
+	display: block;
+}
+
+.navi > li > a {
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #222328;
+	color: #ffffff;
+}
+
+.navi > li > a:hover {
+	background-color: #930930;
+	color: #ffff00;
+}
+
+.submenu {
+	float: left;
+	width: 180px;
+	height: 100%;
+	left: 180px;
+	top: 0px;
+	position: absolute;
+	background-color: #cccccc;
+	display: none;
+	z-index: 1;
+}
+
+.submenu > li {
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #cccccc;
+	color: #ffffff;
+}
+
+.submenu > li > a:hover {
+	background-color: #999999;
+	color: #ffff00;
+}
+
+.bodywrap {
+	float: right;
+	width: 800px;
+	height: 550px;
+}
+
+.imgslide {
+	width: 800px;
+	height: 350px;
+	position: relative;
+}
+
+.imgslide > a {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	transition: all 3s;
+}
+
+.imgtext {
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    margin: -25px 0 0 -150px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: rgba(40, 40, 40, 0.3);
+    left: 50%;
+	top: 50%;
+}
+
+.contents {
+	float: right;
+	width: 800px;
+	height: 200px;
+}
+
+.tabmenu {
+	float: left;
+	width: 290px;
+	height: 180px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
+
+.tabmenu > li {
+	float: left;
+	width: 80px;
+	line-height: 30px;
+}
+
+.tabmenu > li > a {
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	background-color: #cccccc;
+	border: 1px solid #dddddd;
+	border-bottom: none;
+}
+
+.tabmenu > li > a:hover {
+	background-color: #eeeeee;
+}
+
+.tabmenu > li:first-child a {
+	border-right: none;
+}
+
+.tabmenu > li.active > a {
+	background-color: #ffffff;
+}
+
+.tabmenu > li div {
+	position: absolute;
+	left: 5px;
+	height: 0;
+	overflow: hidden;
+}
+
+.tabmenu > li.active div {
+	width: 288px;
+	height: 148px;
+	border: 1px solid #dddddd;
+	z-index: 1;
+}
+
+.notice ul {
+	float: left;
+	width: 288px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.notice li {
+	height: 32px;
+	line-height: 32px;
+	font-size: 13px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.notice li:nth-child(2n) {
+	background-color: #cccccc;
+}
+
+.notice li span {
+	float: right;
+}
+
+.notice li:hover {
+	font-weight: bold;
+}
+
+.gallery li {
+	float: left;
+	margin-top: 20px;
+	margin-left: 5px;
+}
+
+.gallery img {
+	width: 70px;
+	height: 90px;
+	padding: 10px;
+}
+
+.gallery li:hover {
+	opacity: 0.5;
+}
+
+.otherwrap {
+	float: left;
+	width: 500px;
+	height: 180px;
+}
+
+.benner {
+	float: left;
+	width: 295px;
+	height: 180px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.benner img {
+	float: left;
+	width: 295px;
+	height: 180px;
+}
+
+.bntext {
+	float: left;
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	text-align: center;
+	color: #ffffff;
+	background-color: rgba(40, 40, 40, 0.3);
+	font-weight: bold;
+	line-height: 40px;
+	left: 350px;
+	top: 80px;
+}
+
+.benner img:hover {
+	opacity: 0.5;
+}
+
+.shortcut {
+	float: right;
+	width: 200px;
+	height: 180px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.shortcut img{
+	float: right;
+	width: 200px;
+	height: 180px;
+}
+
+.sctext {
+	
+}
+
+footer {
+	float: right;
+	width: 800px;
+	height: 100px;
+}
+
+.bottom {
+	float: right;
+	width: 800px;
+	height: 100px;
+	background-color: #cccccc;
+}
+
+.bottomlogo {
+	float: left;
+	width: 200px;
+	height: 100px;
+}
+
+.site {
+	float: right;
+	width: 600px;
+	height: 100px;
+}
+
+.bottommenu {
+	width: 600px;
+	height: 50px;
+}
+
+.copy {
+	width: 600px;
+	height: 50px;
+}
